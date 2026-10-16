@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chris Hooks</title>
+<meta name="description" content="Engineering leader. Agentic tooling adoption, auditable AI, fractional and interim CTO work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #e7e8e3;
+    --paper-deep: #dcded7;
+    --ink: #151c21;
+    --ink-soft: #4d5a62;
+    --rule: #c3c7bf;
+    --mark: #0d5c55;
+    --measure: 34rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141a1d;
+      --paper-deep: #1b2226;
+      --ink: #e4e6e1;
+      --ink-soft: #99a5ac;
+      --rule: #2e373c;
+      --mark: #4fb3a4;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  main {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  a { color: inherit; text-decoration-color: var(--mark); text-underline-offset: 0.2em; }
+  a:hover { color: var(--mark); }
+  a:focus-visible { outline: 2px solid var(--mark); outline-offset: 3px; }
+
+  .who {
+    font-size: 0.9375rem;
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+    margin: 0 0 2.5rem;
+  }
+  .who strong { color: var(--ink); font-weight: 600; }
+
+  h1 {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.9rem, 6.2vw, 2.9rem);
+    line-height: 1.16;
+    letter-spacing: -0.012em;
+    margin: 0 0 1.5rem;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    font-size: 1.1875rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 0.9rem;
+  }
+
+  section { margin-bottom: 3.25rem; }
+
+  p { margin: 0 0 1.1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  .finding {
+    border-left: 2px solid var(--mark);
+    padding: 0.1rem 0 0.1rem 1.4rem;
+    margin: 0 0 1.4rem;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 1.1875rem;
+    line-height: 1.5;
+  }
+
+  .offer { margin: 0; padding: 0; list-style: none; }
+  .offer li {
+    padding: 0.85rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .offer li:last-child { border-bottom: 1px solid var(--rule); }
+  .offer b { font-weight: 600; display: block; }
+  .offer span { color: var(--ink-soft); }
+
+  .track {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .track div {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 0 1.25rem;
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .track div:last-child { border-bottom: 1px solid var(--rule); }
+  .track dt { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .track dd { margin: 0; }
+
+  @media (max-width: 30rem) {
+    .track div { grid-template-columns: 1fr; gap: 0.1rem; }
+    .track dt { font-size: 0.9375rem; }
+  }
+
+  .contact {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.5rem;
+    margin-top: 4rem;
+  }
+  .contact p { font-size: 1.0625rem; }
+  .contact .lines a { display: inline-block; margin-right: 1.5rem; }
+
+  footer {
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <p class="who"><strong>Chris Hooks</strong> &middot; engineering leader, Amsterdam</p>
+
+  <h1>Most teams adopt AI tooling by buying licences. That is not adoption.</h1>
+
+  <p class="standfirst">I took a forty-person engineering organisation through it properly, and designed the governance that made it safe. I am available to do that for other teams.</p>
+
+  <section>
+    <h2>What I found</h2>
+    <p class="finding">Agentic tooling amplifies existing judgement. It does not substitute for it.</p>
+    <p>Engineers who were already strong at breaking a problem down and reading their own output critically got dramatically faster. Engineers who were weak there produced more code at the same quality or worse, and the review burden moved onto other people rather than disappearing.</p>
+    <p>So rolling it out is a coaching problem wearing a tooling costume. The controls matter as much as the licences: who owns code the agent wrote, what the agent is allowed to touch and when that widens, and how architectural decisions get recorded so the agent conforms to them rather than inventing its own.</p>
+    <p>The part people miss is what it does to the engineers. The thing most of them defined themselves by, writing the code, is no longer the thing they spend their day doing. If nobody tells them where their value sits now, some conclude it has gone. That is the harder half of the rollout and it does not appear on any adoption plan.</p>
+  </section>
+
+  <section>
+    <h2>What I can help with</h2>
+    <ul class="offer">
+      <li><b>Agentic tooling adoption</b><span>Getting a team onto it properly, with the review practice and permissions model to go with it, rather than hoping for the best.</span></li>
+      <li><b>AI work that can be audited</b><span>Decisions recorded as durable artefacts rather than buried in chat history, so you can say afterwards why the system did what it did.</span></li>
+      <li><b>Fractional and interim CTO</b><span>Technical strategy, architecture and delivery, close enough to the code to be useful.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Background</h2>
+    <dl class="track">
+      <div><dt>2023&ndash;2026</dt><dd>Engineering Director, Reliance Health. Clinical and identity platforms across four countries, deputising for the SVP Engineering.</dd></div>
+      <div><dt>2019&ndash;2020</dt><dd>Lead engineer on the platform behind <a href="https://rdb.rw/government-of-rwanda-babyl-partner-to-provide-digital-healthcare-to-all-rwandans/">Rwanda's national digital health service</a>, delivered over USSD to any handset.</dd></div>
+      <div><dt>2017&ndash;2019</dt><dd>Product owner and technical architect at an AI startup whose moderation product was <a href="https://www.pcmag.com/news/intel-levels-up-ai-to-battle-toxicity-in-online-games">deployed with Intel</a> and later acquired by Twitch.</dd></div>
+      <div><dt>Earlier</dt><dd>Contract engineering across e-commerce, gaming and early-stage startups, including <a href="https://www.mobygames.com/person/744983/chris-hooks/">AAA game titles</a>. Named inventor on a <a href="https://patents.justia.com/inventor/christopher-g-hooks">patent family</a> for set-top box virtualisation, granted and extended by DISH over fifteen years. Physicist by training.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>What I am building</h2>
+    <p>Agents today can only act inside the organisation that runs them. If your agent needs to work with someone else's agent, or with a person at another company, everything routes through a platform in the middle, and that platform sees the data. For healthcare, banking and anything else regulated, that is the end of the conversation. You also do not control the intelligence: the model underneath you can change, or go down, and your product changes with it.</p>
+    <p>I am building the layer that removes the middle: a federated identity and messaging mesh where humans and agents are the same kind of actor and collaborate across organisational boundaries directly, every room encrypted, no broker holding the data. Two things are being built on it to prove the model, a chat app with a personal companion that runs on your own phone, and an engineering platform where agents do the work end to end.</p>
+    <p>It came out of the problem above. Staging is live.</p>
+  </section>
+
+  <div class="contact">
+    <p>If any of this is your problem, I would like to hear about it.</p>
+    <p class="lines">
+      <a href="mailto:chris@hooks.me.uk">chris@hooks.me.uk</a>
+      <a href="https://www.linkedin.com/in/christopher-hooks/">LinkedIn</a>
+    </p>
+  </div>
+
+  <footer>Amsterdam. Available now, remote or on site.</footer>
+
+</main>
+</body>
+</html>
